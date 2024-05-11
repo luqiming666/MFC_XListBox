@@ -1,0 +1,295 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "#ifdef _VC60\r\n"
+    "/////////////////////////////////////////////////////////////////////////////\r\n"
+    "//\r\n"
+    "// 24\r\n"
+    "//\r\n"
+    "1                      24      MOVEABLE PURE   ""app.manifest""\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "hans.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 270, 131
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About XListBoxTest"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,14,20,20,SS_CENTERIMAGE | 
+                    WS_BORDER
+    LTEXT           "XListBoxTest Version 1.2",IDC_STATIC,40,13,140,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright © 2003-2008 Hans Dietrich",IDC_STATIC,40,27,
+                    165,8
+    LTEXT           "This software is released into the public domain.  You are free to use it in any way you like.",
+                    IDC_STATIC,40,43,165,18
+    LTEXT           "This software is provided ""as is"" with no expressed or implied warranty.  I accept no liability for any damage or loss of business that this software may cause. ",
+                    IDC_STATIC,40,67,165,34
+    LTEXT           "Send email to Hans Dietrich",IDC_ABOUT_EMAIL,90,113,90,
+                    8,SS_CENTERIMAGE
+    DEFPUSHBUTTON   "OK",IDOK,209,9,50,14,WS_GROUP
+END
+
+IDD_XLISTBOXTEST_DIALOG DIALOGEX 0, 0, 240, 258
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "XListBoxTest"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,10,8,220,32
+    EDITTEXT        IDC_STRING,20,20,150,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Add String",IDC_ADD_STRING,174,19,46,14
+    GROUPBOX        "Colors",IDC_STATIC,10,46,220,52,WS_GROUP
+    CONTROL         "Use colors specified below",IDC_RADIO_COLOR,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,21,59,110,10
+    CONTROL         "Use random colors",IDC_RADIO_COLOR2,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,139,59,76,10
+    LTEXT           "Text:",IDC_STATIC,20,79,18,8
+    COMBOBOX        IDC_TEXT_COLOR,39,76,64,195,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_GROUP | WS_TABSTOP
+    LTEXT           "Background:",IDC_STATIC,112,78,43,8
+    COMBOBOX        IDC_BACKGROUND_COLOR,156,76,64,195,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Other Options",IDC_STATIC,10,104,220,35,WS_GROUP
+    CONTROL         "Write log file",IDC_LOG_FILE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,21,120,57,10
+    PUSHBUTTON      "Line Number Options...",IDC_LINE_NUMBER_OPTIONS,135,118,
+                    85,14
+    LISTBOX         IDC_LIST,10,149,220,101,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+END
+
+IDD_LINE_NUMBERS DIALOG DISCARDABLE  0, 0, 255, 97
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "XListBoxTest - Line Number Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "        ",IDC_STATICGB,10,8,235,62,WS_GROUP
+    CONTROL         "Enable line numbers",IDC_LINE_NUMBERS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,7,79,10
+    LTEXT           "Gutter width:",IDC_STATIC1,20,25,42,8
+    EDITTEXT        IDC_GUTTER_WIDTH,62,24,25,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_GROUP
+    CONTROL         "Spin1",IDC_GUTTER_WIDTH_SPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,87,24,11,12
+    LTEXT           "Gutter color:",IDC_STATIC3,20,50,41,8
+    PUSHBUTTON      "",IDC_GUTTER_COLOR,61,47,50,14
+    LTEXT           "Line number color:",IDC_STATIC4,125,50,60,8
+    PUSHBUTTON      "",IDC_LINENO_COLOR,185,47,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,135,76,50,14
+    DEFPUSHBUTTON   "OK",IDOK,195,76,50,14
+    LTEXT           "(in characters)",IDC_STATIC2,91,25,48,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,0,1
+ PRODUCTVERSION 1,2,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "Article", "www.codeproject.com\0"
+            VALUE "E-mail", "hdietrich@gmail.com\0"
+            VALUE "FileDescription", "XListBoxTest.exe\0"
+            VALUE "FileVersion", "1, 2, 0, 1\0"
+            VALUE "LegalCopyright", "Copyright © 2003-2008 Hans Dietrich\0"
+            VALUE "OriginalFilename", "XListBoxTest.exe\0"
+            VALUE "ProductName", "XListBoxTest\0"
+            VALUE "ProductVersion", "1, 2, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_XLISTBOX MENU DISCARDABLE 
+BEGIN
+    POPUP "XListBox"
+    BEGIN
+        MENUITEM "&Select All",                 ID_EDIT_SELECT_ALL
+        MENUITEM "&Copy",                       ID_EDIT_COPY
+        MENUITEM "C&lear",                      ID_EDIT_CLEAR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+
+    IDD_XLISTBOXTEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 251
+    END
+
+    IDD_LINE_NUMBERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About XListBoxTest..."
+    IDS_MAILTO              "mailto:hdietrich@gmail.com?subject=XListBox"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "afxres.rc"         // Standard components
+#endif
+#ifdef _VC60
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+1                      24      MOVEABLE PURE   "app.manifest"
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
