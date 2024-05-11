@@ -7,5 +7,8 @@
 * Clipboard.cpp
 * Clipboard.h
 
+**重要：**  
+确保ListBox的属性设置了：LBS_OWNERDRAWFIXED | LBS_HASSTRINGS  
+
 Thanks to Hans Dietrich.  
 [Original Article](https://www.codeproject.com/Articles/2001/XListBox-Owner-draw-CListBox-with-selectable-text)
